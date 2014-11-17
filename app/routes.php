@@ -13,5 +13,20 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('test/demo');
+});
+
+Route::get('/welcome', 'HomeController@showWelcome');
+
+Route::get('users', function()
+{
+    $users = User::all();
+
+    return View::make('users')->with('users', $users);
+});
+
+Route::get('demo', function()
+{
+    $r = Config::get('app.timezone');
+    return $r;
 });

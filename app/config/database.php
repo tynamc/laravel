@@ -55,12 +55,12 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'database'  => 'laravel',
+			'username'  => 'root',
+			'password'  => '111111',
 			'charset'   => 'utf8',
-			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
+			'collation' => 'utf8_general_ci',
+			'prefix'    => 'test_',
 		),
 
 		'pgsql' => array(
